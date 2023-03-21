@@ -19,7 +19,7 @@
   mixed.push(true);
   // mixed.push({});
 
-  let numbers: (number)[]=[1,2,3,4];
+  let numbers: number[]=[1,2,3,4];
   let newNumbers= numbers.map((number)=>number*2);
   console.log(newNumbers);
 })()
