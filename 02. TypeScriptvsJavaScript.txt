@@ -1,0 +1,30 @@
+🔵 TypeScript vs JavaScript
+
+En JavaScript te das cuenta de los errores del código una vez que lo estés ejecutando. 
+En TypeScript con el análisis estático de código nos damos cuenta de los errores en el 
+editor o a la hora de transpilar, por lo que evitamos que los errores lleguen a la 
+ejecución.
+
+Un programador de TS es distinto a uno de JS. El programador de TypeScript añade una 
+capa de análisis de código estático a Javascript.
+
+🔵 ¿Como se pueden encontrar errores?
+
+En el libro [Software Engineering at Google](https://www.notion.so/96d82b86ea0b43ea86ba33f0f6415846) lo dividen en distintas etapas:
+
+▪️ Static analysis (Acá es donde TS cumple su rol)
+- Corre en el editor.
+- Puede encontrar typos, llamados incorrectos a funciones.
+- Nos permite autocompletar código.
+
+▪️ Unit Tests
+- En pocos segundos nos permiten verificar si nuestro código hace lo que pensamos 
+que hace.
+
+▪️ Integration tests
+- Toma unos minutos validar si nuestro sistema funciona.
+- Podemos encontrar distintos casos límite.
+
+▪️ Code review
+- Toma algunas horas validar que estamos siguiendo las prácticas y normas de nuestro 
+equipo.

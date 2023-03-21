@@ -1,0 +1,11 @@
+1. Ir a gitignore.io, agregar Windows, linux, macOS, node y pegarlo en el archivo: .gitignore
+
+2. Crear el archivo: .editorconfig
+
+3. Ejecutar: npm i -y
+
+4. Instalar TypeScript: npm i typescript --save-dev
+
+5. Ahora para ver algunos comandos podemos ejecutar: npx tsc
+
+6. Crear la carpeta: src

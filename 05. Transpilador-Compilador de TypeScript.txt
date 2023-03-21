@@ -1,0 +1,39 @@
+🔵 El compilador/transpilador de TypeScript
+
+Nuestro navegador y Node no reconocen nativamente archivos TypeScript, lo que hace 
+el transpilador es traducir el código de .ts a .js.
+
+En nuestros archivos .ts vamos a tener las clases, interfaces, módulos, tipos. 
+El transpilador nos va a convertir el código en .js que va a poder correr en 
+cualquier lugar. Además el transpilador nos permite elegir a que version de ECMAScript 
+vamos a traducir nuestro código.
+
+▪️ Para compilar un fichero, ejecutamos: npx tsc ruta/archivo.ts
+
+Por defecto TypeScript transpila el código para la versión de ECMAScript 3, por lo que 
+muchas funciones no van a correr y nos va a dar un error. Para cambiar esto:
+
+▪️ npx tsc src/archivo.ts --target es6
+
+Tambien podemos indicar que transpile todos los archivos ts e indicar una carpeta 
+de salida:
+
+▪️ npx tsc src/*.ts --target es6 --outDir dist
+
+Al ejecutar esto, podemos tener un error, se resuelve creando un archivo tsconfig.json:
+
+1. Posicionate en el directorio raíz de tu proyecto.
+2. Ejecutar el comando `npx tsc --init`. Esto creará el archivo tsconfig.json.
+3. Modificar el target o el destino de los archivos compilados, en el archivo 
+   tsconfig.json busca el flag “outDir” y modificala para que quede así: `"outDir": "./dist",`.
+   En el rootDir agregar "./src".
+
+
+**Nota:** El tsconfig ya viene configurado para compilar a ES6, en caso de que quieras cambiar, 
+busca la línea “target” y modifícala con el valor que necesites.
+
+Comandos: 
+
+▪️ npx tsc --init (crear el archivo tsconfig.json)
+▪️ npx tsc 
+▪️ npx tsc --watch (escucha constantemente los archivos ts)

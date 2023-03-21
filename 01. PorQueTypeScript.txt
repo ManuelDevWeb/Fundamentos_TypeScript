@@ -1,0 +1,7 @@
+🔵 ¿Por qué usar TypeScript?
+
+- Es uno de los lenguajes de programación más queridos por la comunidad.
+- Alta adopción.
+- Podemos prevenir muchos errores de JS.
+- Mejor experiencia de desarrollo.
+- Menor cantidad de bugs.
